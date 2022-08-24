@@ -1,0 +1,222 @@
+/* -------------------------PAGE STYLING--------------------------------------------------------- */
+body{
+    margin: 0%;
+    min-height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    color: orangered;}
+html{
+    scroll-behavior: smooth;}
+/* ----------------------------------HEADER STYLING-------------------------------------------- */
+/* LOGO MEASUREMENTS */
+.logo{
+    width:100px;
+    margin:20px;
+    margin-left: 40px;} 
+.fixlogo{
+    width: 4.5%;
+    margin:0.4%;
+    margin-left: 8%;}
+/* ------------------------- */
+
+/* HEADER LINKS AND ELEMENTS SETTING */
+.header_element{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 7%;
+    margin-top: -6%;
+    color: brown;}
+.fixheader_element{
+    margin-top: -3.6%;
+    margin-right: 8%;}
+.bold{
+    color: white;
+    font-weight:bold;
+    font-size: 1.4vw;
+    margin-left: 30px;
+    text-decoration: NONE;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}
+.fixbold{
+    color:rgba(0,0,0,0.7);
+    margin-left:4%;
+    font-size: 1.5vw}
+.heading_kitty{
+    height:8%;
+    width:8%;
+    opacity: 0.8;
+    margin:0px -25px -12px -30px;}
+.TITLE{
+    text-align: center;
+    margin-top: 100px ;
+    color: aliceblue;
+    font-size: 50px;
+    font-family:sans-serif;
+    /* opacity: 0.9; */
+    cursor:default;}
+.quote{
+    text-align: center;
+    margin-top: -30px ;
+    color: aliceblue;
+    cursor:default;}
+/* ------------------------- */
+
+/* HEADER ALLIGNMENT */
+.header{
+    height:380px;
+    /* padding: 10px; */
+    color:black;
+    text-align:left; 
+    background-image:url("https://articles-images.sftcdn.net/wp-content/uploads/sites/3/2017/08/foodie-apps1-1024x576.jpg");
+    background-repeat:no-repeat;
+    background-size:100% auto, cover;
+    background-attachment: fixed; }
+ .posfix{
+    position:fixed;
+    background-color:white;
+    width: 100%;
+    height: 8%;
+    background-image: none !important;
+    z-index: 1;
+    display: none;
+    animation-name: topheader;
+    animation-duration: 0.7s;}
+ @keyframes topheader{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}}
+@keyframes topB{
+    from {top:-300px; opacity:0} 
+    to {top:7.6%; opacity:1}}
+ #Header-Border{
+    display: none;
+    height: 5px;
+    z-index: 2;
+    background-color: rgb(241, 177, 151);
+    width: 100%;
+    top:7.6%;
+    position: fixed;
+    -webkit-animation-name: topheader;
+    -webkit-animation-duration: 0.7s;
+    animation-name: topB;
+    animation-duration: 0.7s;}
+  /* ------------------- */ 
+/* --------------------------------------------------HEADER STYLING END--------------------------------------------- */
+
+/* ----------------------------------------------BODY STYLING------------------------------------------------------- */
+table{
+    border: 2px solid coral;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50px;
+    width: 70%;
+    margin: 5% 15% 0% 15%;
+    border-spacing: 2rem 1.5rem;
+}
+.dham-button{
+    color: white;
+    background-color: coral;
+    border: 0;
+    width: 9vw;
+    height: 30px;
+}
+#intro{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 188, 162);
+    font-size: large;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.intro{
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+.popular-heading{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 2.3vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: coral;}
+.popular-image{
+    border-radius: 40px;
+    height: 33vh;
+    width: 50vh;}
+/* ----------------------------------------------BODY STYLING END--------------------------------------------------- */
+
+/* --------------------------------------------FOOTER STYLING------------------------------------------------- */
+.footer {
+    background-color:black;
+    margin-top: auto;
+}
+ .foot_div_content {
+    display: flex;
+    flex-direction: row;
+}
+.footer_content {
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 40px;
+    text-decoration :none;
+}
+.column{
+    display:block;
+    flex-direction:column;
+    margin-left:40px;
+    text-decoration:none;
+    color:grey;
+}
+.footer_review{
+    margin-left:180px;
+    margin-top:-98px;
+}
+.footer_newsletter{
+    margin-left:380px;
+    margin-top:-70px;
+}
+.footer-btn:hover{
+    background-color: #555;
+}
+.footer_lower{
+    color:white;
+    text-align:center;
+    background-color:brown;
+    margin-bottom:-5px;
+}
+/* ----------------------------------------FOOTER STYLING END---------------------------------------------------- */
+/* -------------------------------------------TOP BUTTON------------------------------------- */
+#top-btn, #down-btn{
+    color: coral;
+    z-index: 99;
+    height:45px;
+    width: 45px;
+    bottom: 30px;
+    position: fixed;
+    border: 2px solid;
+    border-color: coral;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#top-btn{
+    right: 30px;
+}
+#down-btn{
+    left:30px;
+}
+#top-btn:hover, #down-btn:hover{
+    background-color: coral;
+    border: 3px solid coral;
+    color: white;
+}
+.UParrow{
+    font-size: 20px;
+    margin-top: 8px;
+    font-size: large;
+}
+/* -------------------------------------------------------------------------------- */
+
+.love-kitty{
+    display: block;
+    width:16%;
+    margin-left: 40%;
+    
+}

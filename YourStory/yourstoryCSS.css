@@ -1,0 +1,314 @@
+/* -------------------------PAGE STYLING--------------------------------------------------------- */
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    color: orangered;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ----------------------- */
+/* ----------------------------------HEADER STYLING-------------------------------------------- */
+/* LOGO MEASUREMENTS */
+.logo{
+    width:100px;
+    margin:20px;
+    margin-left: 40px;
+} 
+.fixlogo{
+    width: 4.5%;
+    margin:-0.5%;
+    margin-left: 7%;
+}
+/* ------------------------- */
+
+/* HEADER LINKS AND ELEMENTS SETTING */
+.header_element{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 5%;
+    margin-top: -6%;
+    color: brown;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.fixheader_element{
+    margin-top: -2.5%;
+    margin-right: 8%;
+}
+.bold{
+    color: white;
+    font-weight:bolder;
+    font-size: large;
+    margin-left: 2.5%;
+    text-decoration: NONE;
+}
+.fixbold{
+    color:rgba(0,0,0,0.7);
+    margin-left:4%;
+    font-size: 122%;   
+}
+.TITLE{
+    text-align: center;
+    margin-top: 35px ;
+    color: aliceblue;
+    font-size: 50px;
+    font-family:sans-serif;
+    opacity: 1000;
+    cursor:pointer;
+}
+.quote{
+    text-align: center;
+    margin-top: -30px ;
+    color: aliceblue;
+    cursor:default;
+}
+/* ------------------------- */
+
+/* HEADER ALLIGNMENT */
+.header{
+    height:1000px;
+    padding: 10px;
+    color:black;
+    text-align:left; 
+    background-image:url("F:/Pridhi/PICS/story/book.jpeg");
+    background-repeat:no-repeat;
+    background-size:100% auto, cover;
+    /* background-attachment: fixed;  */
+ }
+ .posfix{
+    position:fixed;
+    background-color:white;
+    width: 100%;
+    height: 5%;
+    background-image: none !important;
+    z-index: 1;
+    display: none;
+    -webkit-animation-name: topheader;
+    -webkit-animation-duration: 0.7s;
+    animation-name: topheader;
+    animation-duration: 0.7s;
+ }
+ @-webkit-keyframes topheader{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+ }
+ @keyframes topheader{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+
+ }
+ #Header-Border{
+    display: none;
+    height: 5px;
+    z-index: 2;
+    background-color: rgb(241, 177, 151);
+    width: 100%;
+    margin-top:3.8%;
+    position: fixed;
+    -webkit-animation-name: topheader;
+    -webkit-animation-duration: 0.7s;
+    animation-name: topheader;
+    animation-duration: 0.7s;
+ }
+  /* ------------------- */ 
+
+
+/* --------------------------------------------------HEADER STYLING END--------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------FOOTER STYLING------------------------------------------------------- */
+.footer {
+    background-color:black;
+    margin-top: auto;
+}
+ .foot_div_content {
+    display: block;
+    flex-direction: row;
+}
+.footer_content {
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 40px;
+    text-decoration :none;
+}
+.column{
+    display:block;
+    flex-direction:column;
+    margin-left:40px;
+    text-decoration:none;
+    color:grey;
+}
+.footer_review{
+    margin-left:180px;
+    margin-top:-114px;
+}
+.footer_newsletter{
+    margin-left:380px;
+    margin-top:-70px;
+}
+.footer-btn:hover{
+    background-color: #555;
+}
+.footer_lower{
+    color:white;
+    text-align:center;
+    background-color:brown;
+    margin-bottom:-5px;
+}
+/* -----------------------------------------------------------FOOTER STYLING END------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------EXTRA SPACE LOGO------------------------------------------------------- */
+.love-kitty{
+    width:200px;
+    margin-left: 40%;
+}
+/* ----------------------=-=-=-=-=-=-=EXTRA LOGO END-=-=-=-=---------------------------------- */
+
+/* -------------------------------------------TOP BUTTON------------------------------------- */
+#top-btn, #down-btn{
+    color: coral;
+    z-index: 99;
+    height:45px;
+    width: 45px;
+    bottom: 30px;
+    position: fixed;
+    border: 1px solid;
+    border-color: coral;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#top-btn{
+    right: 30px;
+}
+#down-btn{
+    left:30px;
+}
+#top-btn:hover, #down-btn:hover{
+    background-color: coral;
+    border: 3px solid coral;
+    color: white;
+}
+.UParrow{
+    font-size: 20px;
+    margin-top: 8px;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------MAIN BODY----------------------------------------- */
+   .main{height:130px;
+    width:100%;
+    background-color:white;
+    margin-bottom:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    color:brown;
+    font-size:20px;
+    cursor:pointer;}	  
+#pic{height:63vw;
+   width:98vw;
+   position:relative}
+.content{display:flex;
+       flex-direction:row;
+    }
+.margin{margin-left:110px;}	
+/* -------------------------FLEX BOX---------------------------------- */
+.heading{
+    padding-top: 20px;
+    font-family: 'Sofia', sans-serif;
+}
+h2{
+    font-size: 2em;
+}
+.box{background-color: transparent;
+width: 40vw;
+height: 31vw;
+border: 1px solid #f1f1f1;
+perspective: 1000px;
+}
+.box-inner{position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+.box:hover .box-inner {
+transform: rotateY(180deg);
+}
+.box-front {position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+background-color: #bbb;
+color: black;
+}
+.box-back {  position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+background-color:rgb(241, 177, 151);
+color: white;
+transform: rotateY(180deg);
+}
+.img{margin-right:5%;}	
+.text{background-color:#bbb;    
+    height:31vw;
+    width:40vw} 
+h3{font-size:3vw;
+ color:coral;
+ margin-top:1vw;
+ text-align:center;
+ font-family:cambril;
+ cursor:pointer} 
+.fliptext{
+    margin: 0px 50px 0px 50px;
+    font-size:1.8vw;
+    text-align: center;
+    font-family:arial}
+/* --------------------------------------------------------------- */
+/* -------------story btn---------- */
+.button{ background-color:coral;
+color:white;
+border:0;
+border-radius: 8px;
+height:2.7vw;
+width:10vw;
+margin-left:27vw;
+margin-top:1vw;}
+.button:hover{
+    background-color: #555;}
+/* ---------------------------- */
+/* -----------RECIPE BTN----------------- */
+.button1{background-color:coral;
+color:white;
+border:0;
+border-radius: 8px;
+height:3vw;
+width:30vw;
+margin-left:5vw;
+margin-top:1vw}
+.button1:hover{
+    background-color: #555;}
+/* ---------------------------------------- */
+.text1{display:flex;
+flex-direction:row;    }
+.div{margin-top:-1vw}
+/* ---------txt boxes-------------- */
+.text_box{margin-left:3vw}
+/* ----------------- */
+.id1{margin-left:7vw;}
+
+/* ------------------------------------------------------------------------------ */

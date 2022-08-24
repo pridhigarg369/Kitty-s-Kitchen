@@ -1,0 +1,448 @@
+/* -------------------------PAGE STYLING--------------------------------------------------------- */
+body{
+    margin: 0%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    color: orangered;
+}
+html{
+    scroll-behavior: smooth;
+}
+section , figcaption , header , footer , div{
+    display: block;
+}
+figcaption{
+    position: absolute;
+    margin-top: -55px;
+    width: 345px;
+    padding: 1rem 1rem;
+    color: white;
+    transition: all 0.3s;
+    background-color: rgba(0,0,0,0);
+}
+figcaption:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+/* ----------------------- */
+/* ----------------------------------HEADER STYLING-------------------------------------------- */
+/* LOGO MEASUREMENTS */
+.logo{
+    width:8%;
+    margin:1.5%;
+    margin-left: 4%;
+} 
+.fixlogo{
+    width: 4.5%;
+    margin:5px;
+    margin-left: 100px;
+}
+/* ------------------------- */
+
+/* HEADER LINKS AND ELEMENTS SETTING */
+.header_element{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 5%;
+    margin-top: -6%;
+    color: brown;
+}
+.fixheader_element{
+    margin-top: -3.6%;
+    margin-right: 8%;
+}
+.bold{
+    color: white;
+    font-weight:bolder;
+    font-size: 1.5vw;
+    margin-left: 2.5%;
+    text-decoration: NONE;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.fixbold{
+    color:rgba(0,0,0,0.7);
+    margin-left:4%;
+    font-size: 1.5vw;
+    
+}
+.heading_kitty{
+    height:8%;
+    width:8%;
+    opacity: 0.8;
+    margin:0px -25px -12px -30px;
+}
+.TITLE{
+    text-align: center;
+    margin-top: 8vw;
+    color: aliceblue;
+    font-size: 5vw;
+    font-family:sans-serif;
+    opacity: 0.9;
+    cursor:default;
+    font-family: "Architects Daughter",sans-serif !important;
+    
+}
+.quote{
+    text-align: center;
+    margin-top: -2.5vw ;
+    color: aliceblue;
+    cursor:default;
+}
+/* ------------------------- */
+
+/* HEADER ALLIGNMENT */
+.header{
+    height:380px;
+    /* padding: 10px; */
+    color:black;
+    text-align:left; 
+    background-image:url("https://www.visityunnanchina.com/files/210124/Puzhehei_Scenic_Area_Yunnan_China.jpg");
+    background-repeat:no-repeat;
+    background-size:100% auto, cover;
+    background-attachment: fixed; 
+ }
+ .posfix{
+    position:fixed;
+    background-color:white;
+    width: 100%;
+    height: 8%;
+    background-image: none !important;
+    z-index: 1;
+    display: none;
+    /* -webkit-animation-name: topheader;
+    -webkit-animation-duration: 0.7s; */
+    animation-name: topheader;
+    animation-duration: 0.7s;
+ }
+ /* @-webkit-keyframes topheader{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+ } */
+ @keyframes topheader{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+
+ }
+ @keyframes topheaderBorder{
+    from {top:-300px; opacity:0} 
+    to {top:7.6%; opacity:1}
+
+ }
+ #Header-Border{
+    display: none;
+    height: 5px;
+    z-index: 2;
+    background-color: rgb(241, 177, 151);
+    width: 100%;
+    top: 7.6%;
+    position: fixed;
+    animation-name: topheaderBorder;
+    animation-duration: 0.7s;
+ }
+  /* ------------------- */ 
+
+
+/* --------------------------------------------------HEADER STYLING END--------------------------------------------- */
+
+/* --------------------------------------------MAIN SECTION STYLING----------------------------------- */
+    .about_heading, .cuisine_heading{
+        margin-top: -3%;
+        margin-bottom: 4%;
+        margin-left: 5%;
+        font-size: 40px;
+        color: coral;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .about_table , .cuisine_table, .story-section{
+    margin-left:8%;
+    margin-right: 8%;
+    border: 2px solid white ;
+    width:84%;
+    border-spacing: 6px 6px;
+    }
+    .about_table{
+        border: 0px !important;
+    }
+    /* =======BACKGROUND IMG FOR DIVS----------------------------- */
+    .div_background , .cuisine_background{  
+        background-repeat: no-repeat;
+        background-size: 2000px auto , cover;
+        padding-top: 150px;
+        padding-bottom: 140px;
+        width: 100%;
+        background-color: rgb(212, 226, 231);    
+    }
+    .div_background{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahzoNRWAe-3pTXbKlkUJ1boRfF_dJd4FJJA&usqp=CAU');
+    }
+    .bg-img{
+        background-repeat:no-repeat;
+        background-size:100% auto, cover;
+        opacity:1;
+        background-attachment: fixed;
+    }
+    #ethnicity{
+        writing-mode: vertical-rl;
+        margin: 0px 0px 150px 20px;
+        font-size: 80px;
+        transform: rotate(180deg);
+        font-family: 'Akaya Kanadaka';
+
+    }
+    .eth-td{
+        width: 25%;
+        height: 250px; 
+        overflow: hidden;
+    }
+    .eth-img, .cus-img{
+        transition: transform.5s;
+    }
+    .eth-img:hover{
+        cursor: pointer;
+    }
+    .eth-img:hover, .cus-img:hover{
+        transform: scale(1.3);
+    }
+    /* ---------------------------------------------------------- */
+    .button , .eth_btn , .story-btn1, .story-btn2{
+        color:white;
+        background-color:coral;
+        border:0;
+        width:150px;
+        height: 37px;
+        /* border-radius: 7px; */
+        transition: 0.5s;
+    }
+    .button{
+        margin-left: 6.5%;
+        margin-top: 2%;
+            }
+    
+    .eth_btn{
+        margin-left:40px;    
+    }
+    .story-btn1{
+        margin:4% 0 0 4%;
+        background-color: white;
+        color: coral;
+        width: 115px;
+        font-size:medium;
+    }
+    .button:hover , .eth_btn:hover , .story-btn1:hover, .story-btn2:hover{
+        background-color: #555;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .cuisine_background{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5iHPzBbovhg7NOA4kwTt9i9AgNUFwoWQSyA&usqp=CAU');
+    }
+     .cuisine_table{
+        background-color:white;
+        border:3px solid white;
+        border-spacing: 7px 7px;
+    } 
+    .cuisine_heading-bgimg{
+        background:#eff3f6 url('https://www.visityunnanchina.com/themes/custom/yunnan2022/images/mountain.jpg') no-repeat right top;
+        background-size: cover;
+    }
+    .cuisine_heading{
+        margin-top: -15%;
+        margin-left:110px;
+    }
+    #cus_symbol{
+        width: 100px;
+        margin: 10px;
+        margin-top: -17%;
+    }
+    .cus-td1{
+        width:30%;
+        height: 275px;
+        overflow: hidden;
+    }
+    .cus-td2{
+        height: 185px;
+        width:0%;
+        overflow: hidden;
+    }
+    .cus-td2-center{
+        height: 185px;
+        width:30%;
+        overflow: hidden;
+    }
+    .cus-td3{
+        height: 255px;
+         width:30%; 
+        overflow: hidden;
+    }
+    .story-section{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbib7MiyEfR2RDoYhJR2SeSA8sLdTyKYEBw&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: pink;
+    }
+    .story_heading{
+        font-size: 6rem;
+        color: white;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        margin: 10% 0 0 4%;
+    }
+    .story_table{
+        border: 2px solid white;
+        width: 50%;
+        margin-left: 45%;
+        margin-top: -37%;
+        background-color: white;
+        border-spacing: 8px 8px;
+    }
+    .story_content{
+        margin-top: -5%;
+        margin-bottom: -1%;
+    }
+    .story-btn2{
+        margin-left: 45%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: white;
+        color: coral;
+        width: 15% !important;
+    }
+    .story_txt{
+        color: white;
+        margin:1% 0 0 4%;
+        font-family: -apple-system,BlinkMacSystemFont;
+    }
+    /* ----------------modal box---------------------- */
+    .model{
+        display: none;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+        background-color:rgba(0,0,0,0.9);
+        /* margin: 10% 0 0 20%; */
+        padding-top: 5%;
+        left: 0;
+        top: 0;
+    }
+    .zoom:hover{
+        opacity: 0.5;
+        cursor: zoom-in;
+    }
+    .story-mod-img{
+        margin: auto;
+        display: block;
+        max-width: 700px;
+        width: 80%;
+        animation-name: slow-model;
+        animation-duration: 0.5s;
+    }
+    @keyframes slow-model {
+        from{transform: scale(0)}
+        to{transform: scale(1)}
+    }
+    .close{
+        position: absolute;
+        font-size: 300%;
+        font-weight: 1000;
+        transition: 0.3s;
+        color:white;
+        margin-left: 72%;
+    }
+    .close:hover{
+        cursor: default;
+        color: black;
+    }
+        
+/* ----------------------------------------------MAIN SECTION STYLING END-------------------------------------------- */
+
+
+/* --------------------------------------------FOOTER STYLING------------------------------------------------- */
+    .footer {
+        background-color:black;
+        margin-top: auto;
+    }
+     .foot_div_content {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_content {
+        font-size: 40px;
+        color: aliceblue;
+        margin-left: 40px;
+        text-decoration :none;
+    }
+    .column{
+        display:block;
+        flex-direction:column;
+        margin-left:40px;
+        text-decoration:none;
+        color:grey;
+    }
+    .footer_review{
+        margin-left:180px;
+        margin-top:-98px;
+    }
+    .footer_newsletter{
+        margin-left:380px;
+        margin-top:-70px;
+    }
+    .footer-btn:hover{
+        background-color: #555;
+    }
+    .footer_lower{
+        color:white;
+        text-align:center;
+        background-color:brown;
+        margin-bottom:-5px;
+    }
+/* ----------------------------------------FOOTER STYLING END---------------------------------------------------- */
+
+
+/* -----------------------------------------------EXTRA SPACE LOGO-------------------------------------------- */
+.love-kitty{
+    display: block;
+    width:16%;
+    margin-left: 40%;
+}
+/* ---------------------------------------------EXTRA SPACE LOGO END-------------------------------- */
+
+
+/* -------------------------------------------TOP BUTTON------------------------------------- */
+#top-btn, #down-btn{
+    color: coral;
+    z-index: 99;
+    height:45px;
+    width: 45px;
+    bottom: 30px;
+    position: fixed;
+    border: 2px solid;
+    border-color: coral;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#top-btn{
+    right: 30px;
+}
+#down-btn{
+    left:30px;
+}
+#top-btn:hover, #down-btn:hover{
+    background-color: coral;
+    border: 3px solid coral;
+    color: white;
+}
+.UParrow{
+    font-size: 20px;
+    margin-top: 8px;
+    font-size: large;
+}
+/* -------------------------------------------------------------------------------- */
+
+.dislpay-none{
+    display: none;
+}
