@@ -119,6 +119,11 @@ table{
     width: 9vw;
     height: 30px;
 }
+.dham-button:hover{
+    background-color: #555;
+    border-radius: 50px;
+    cursor: pointer;
+}
 #intro{
     width: 100%;
     text-align: center;
