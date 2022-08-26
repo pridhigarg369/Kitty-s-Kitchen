@@ -190,6 +190,9 @@ figcaption:hover ~ .cus-image{
         background-size:100% auto, cover;
         opacity:1;
         background-attachment: fixed;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVHEgC2NuzCM2ydpE7r34WkG8_3_pEfVLBgA&usqp=CAU');
+        padding-right: 50%;
+        width:20%;
     }
     #ethnicity{
         writing-mode: vertical-rl;
