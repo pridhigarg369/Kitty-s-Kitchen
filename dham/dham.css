@@ -42,15 +42,15 @@ html{
 .bold{
     color: white;
     font-weight:bolder;
-    font-size: large;
-    margin-left: 30px;
+    font-size: 1.5vw;
+    margin-left: 2.5%;
     text-decoration: NONE;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .fixbold{
     color:rgba(0,0,0,0.7);
     margin-left:4%;
-    font-size: 122%;
+    font-size: 1.5vw;
     
 }
 .heading_kitty{
@@ -61,7 +61,7 @@ html{
 }
 .TITLE{
     text-align: center;
-    margin-top: 100px ;
+    /* margin-top: 100px ; */
     color: aliceblue;
     font-size: 50px;
     font-family:sans-serif;
@@ -79,8 +79,8 @@ html{
 
 /* HEADER ALLIGNMENT */
 .header{
-    height:380px;
     /* padding: 10px; */
+    display: none;
     color:black;
     text-align:left; 
     background-image:url("https://th.bing.com/th/id/OIP.jj6gEhh51RpcmGY5si-QsgHaDB?w=312&h=142&c=7&r=0&o=5&pid=1.7");
@@ -89,13 +89,14 @@ html{
     background-attachment: fixed; 
  }
  .posfix{
+    margin-top:3.8%;
     position:fixed;
     background-color:white;
     width: 100%;
     height: 8%;
     background-image: none !important;
     z-index: 1;
-    display: none;
+    /* display: none; */
     -webkit-animation-name: topheader;
     -webkit-animation-duration: 0.7s;
     animation-name: topheader;
@@ -111,7 +112,7 @@ html{
 
  }
  #Header-Border{
-    display: none;
+    /* display: none; */
     height: 5px;
     z-index: 2;
     background-color: rgb(241, 177, 151);
