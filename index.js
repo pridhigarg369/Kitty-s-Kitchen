@@ -49,7 +49,7 @@ function downFunction() {
 }
 // -------------------------------------story page open button----------------------------------
 function readFunction() {
-  window.open("./YourStory/yourstory.html", "_self");
+  window.open("../YourStory/yourstory.html", "_self");
 }
 // ----------------------------------------------------------------
 // var modal = document.getElementById("modal");
